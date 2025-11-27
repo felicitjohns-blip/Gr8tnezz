@@ -26,7 +26,7 @@
         box-shadow: var(--shadow-light); display: block;
     }
     
-    .btn{background: var(--accent); color: #fff; padding: 10px 20px; border-radius: 6px; text-decoration: none; display: inline-block; font-weight: 600; transition: background 0.2s, transform 0.1s; border: none;}
+    .btn{background: var(--accent); color: #fff; padding: 10px 20px; border-radius: 6px; text-decoration: none; display: inline-block; font-weight: 600; transition: background 0.2s, transform 0.1s;}
     .btn:hover{background: #e35a2b; transform: translateY(-1px);}
     
     .topics{display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; padding: 0 25px 50px;}
@@ -43,50 +43,54 @@
 </head>
 <body>
 <header>
-  <div class="logo">Matandoh's FM Station • Saturday Talk Show</div>
-  <nav>
-    <a href="home.html" style="color: var(--accent);">Home</a>
-    <a href="topics.html">Topics</a>
-    <a href="search.html">Search by Date</a>
-    <a href="admin.html">Admin</a>
-  </nav>
+  <!-- Logo now links to the deployed prototype and opens in a new tab -->
+  <div class="logo"><a href="https://felicitjohns-blip.github.io/Gr8tnezz/" target="_blank" rel="noopener noreferrer" style="color:inherit; text-decoration:none;">Matandoh's FM Station • Saturday Talk Show</a></div>
+  <nav>
+    <!-- All internal navigation updated to point to the deployed prototype; Prototype item still present for clarity -->
+    <a href="https://felicitjohns-blip.github.io/Gr8tnezz/" style="color: var(--accent);" target="_blank" rel="noopener noreferrer">Home</a>
+    <a href="https://felicitjohns-blip.github.io/Gr8tnezz/" target="_blank" rel="noopener noreferrer">Topics</a>
+    <a href="https://felicitjohns-blip.github.io/Gr8tnezz/" target="_blank" rel="noopener noreferrer">Search by Date</a>
+    <a href="https://felicitjohns-blip.github.io/Gr8tnezz/" target="_blank" rel="noopener noreferrer">Admin</a>
+    <a href="https://felicitjohns-blip.github.io/Gr8tnezz/" target="_blank" rel="noopener noreferrer">Prototype</a>
+  </nav>
 </header>
 
 <section class="hero">
-  <div class="hero-card">
-    <h1>Saturday Talk: Voices of Development</h1>
-    <p style="color:var(--muted)">Every Saturday we discuss politics, current affairs, and community projects. Select a topic and listen to the broadcast.</p>
-    <a class="btn" href="topics.html">Listen to Latest Episode</a>
-  </div>
-  <div class="hero-image-container">
-    <img src="IPMC sweclass.jpeg" alt="IPMC Software Engineering Class with Instructor Mr. Aaron">
-    <div style="background:var(--card);padding:15px;border-radius:var(--radius); box-shadow: var(--shadow-light); border: 1px solid #f0f0f0; width: 100%;">
+  <div class="hero-card">
+    <h1>Saturday Talk: Voices of Development</h1>
+    <p style="color:var(--muted)">Every Saturday we discuss politics, current affairs, and community projects. Select a topic and listen to the broadcast.</p>
+    <!-- Listen button updated to open the prototype -->
+    <a class="btn" href="https://felicitjohns-blip.github.io/Gr8tnezz/" target="_blank" rel="noopener noreferrer">Listen to Latest Episode</a>
+  </div>
+  <div class="hero-image-container">
+    <img src="IPMC sweclass.jpeg" alt="IPMC Software Engineering Class with Instructor Mr. Aaron">
+    <div style="background:var(--card);padding:15px;border-radius:var(--radius); box-shadow: var(--shadow-light); border: 1px solid #f0f0f0; width: 100%;">
         <p style="margin: 0; font-size: 0.9em;">Now Playing:</p>
         <strong style="color: var(--accent);">Topic: Development Projects</strong><br/>
         <small style="color:var(--muted)">Sat, 29 Nov 2025</small>
     </div>
-  </div>
+  </div>
 </section>
 
 <section>
-  <h2 style="padding:0 25px; margin-top: 40px;">Recent Topics</h2>
-  <div class="topics">
-    <div class="topic">
+  <h2 style="padding:0 25px; margin-top: 40px;">Recent Topics</h2>
+  <div class="topics">
+    <div class="topic">
         <h4>Education Reforms (IPMC Special)</h4>
         <p style="color:var(--muted); font-size: 0.9em; margin-bottom: 12px;">Sat, 22 Nov 2025 • Featuring the **IPMC Software Engineering Year Class with Instructor Mr. Aaron**.</p>
-        <a class="btn" style="padding: 8px 14px; font-size: 0.9em;" href="detail.html?id=1">Play Episode</a>
+        <a class="btn" style="padding: 8px 14px; font-size: 0.9em;" href="https://felicitjohns-blip.github.io/Gr8tnezz/" target="_blank" rel="noopener noreferrer">Play Episode</a>
     </div>
-    <div class="topic">
+    <div class="topic">
         <h4>Local Infrastructure</h4>
         <p style="color:var(--muted); font-size: 0.9em; margin-bottom: 12px;">Sat, 15 Nov 2025 • Short description of the key discussion points...</p>
-        <a class="btn" style="padding: 8px 14px; font-size: 0.9em;" href="detail.html?id=2">Play Episode</a>
+        <a class="btn" style="padding: 8px 14px; font-size: 0.9em;" href="https://felicitjohns-blip.github.io/Gr8tnezz/" target="_blank" rel="noopener noreferrer">Play Episode</a>
     </div>
-    <div class="topic">
+    <div class="topic">
         <h4>Healthcare Access</h4>
         <p style="color:var(--muted); font-size: 0.9em; margin-bottom: 12px;">Sat, 08 Nov 2025 • Short description of the key discussion points...</p>
-        <a class="btn" style="padding: 8px 14px; font-size: 0.9em;" href="detail.html?id=3">Play Episode</a>
+        <a class="btn" style="padding: 8px 14px; font-size: 0.9em;" href="https://felicitjohns-blip.github.io/Gr8tnezz/" target="_blank" rel="noopener noreferrer">Play Episode</a>
     </div>
-  </div>
+  </div>
 </section>
 
 <footer>© Matandoh's FM Station • Saturday Talk Show</footer>
