@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>Admin - Matandoh's FM Station</title>
+<style>
+    :root{
+        --accent: #FF6B35; --bg: #eef1f5; --card: #fff; --dark: #111; --radius: 12px;
+    }
+    body{font-family:system-ui;background:var(--bg);margin:0}
+    header{background:var(--dark);color:#fff;padding:18px 25px; font-weight: 800; font-size: 1.2em;}
+    main{padding:30px 25px; max-width: 900px; margin: 0 auto;}
+    .form-card{background:var(--card);padding:25px;border-radius:var(--radius); max-width:800px; margin: 0 auto;}
+    input, textarea, select {
+        padding: 10px; border: 1px solid #ccc; border-radius: 6px; margin-top: 5px; box-sizing: border-box; 
+    }
+    button {
+        cursor: pointer; transition: background 0.2s;
+        background:#FF6B35;color:#fff;padding:10px 16px;border-radius:6px;border:none; font-weight: bold;
+    }
+    button:hover {background: #e35a2b !important;}
+</style>
+</head>
+<body>
+<header><div>Matandoh's FM Station Admin</div></header>
+<main>
+    <div class="form-card">
+        <h3>Upload New Saturday Show (FR6)</h3>
+        
+        <label>Topic Title<br/>
+            <input style="width:100%" placeholder="e.g., The State of Roads in Accra" required>
+        </label><br/><br/>
+        
+        <label>Presenter Name<br/>
+            <input style="width:100%" placeholder="e.g., Kojo Mensah" required>
+        </label><br/><br/>
+
+        <label>Broadcast Date<br/>
+            <input type="date" style="width:100%" required>
+        </label><br/><br/>
+        
+        <label>Category/Tags<br/>
+            <select style="width:100%">
+                <option>Select Category...</option>
+                <option>Politics</option>
+                <option>Infrastructure</option>
+                <option>Education</option>
+            </select>
+        </label><br/><br/>
+
+        <label>Description<br/>
+            <textarea style="width:100%" rows="4" placeholder="Full summary of the episode's discussion points..."></textarea>
+        </label><br/><br/>
+
+        <label>Audio File (MP3)<br/>
+            <input type="file" accept=".mp3,audio/*" required>
+        </label><br/><br/>
+        
+        <button type="submit">Publish Episode</button>
+    </div>
+</main>
+</body>
+</html>

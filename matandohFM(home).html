@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>Matandoh's FM Station - Home</title>
+<style>
+    :root{
+        --accent: #FF6B35; --bg: #eef1f5; --card: #fff; --muted: #666; --dark: #111;
+        --shadow-light: 0 4px 12px rgba(16, 24, 40, 0.04); --shadow-hover: 0 8px 16px rgba(16, 24, 40, 0.1);
+        --radius: 12px;
+    }
+    body{font-family: system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial, sans-serif; margin: 0; background:var(--bg); color:var(--dark); line-height: 1.6;}
+    header{background:var(--dark); color:#fff; padding:18px 25px; display: flex; align-items: center; justify-content: space-between;}
+    .logo{font-weight: 800; font-size: 1.2em;}
+    nav a{color: #ddd; margin-left: 18px; text-decoration: none; font-weight: 500; transition: color 0.2s;}
+    nav a:hover{color: var(--accent);}
+    .hero{padding: 50px 25px; display: flex; gap: 30px; align-items: center; justify-content: space-between;}
+    .hero-card{background:var(--card); padding:30px; border-radius:var(--radius); box-shadow:var(--shadow-light); flex: 1;}
+    .hero h1 {margin-top: 0; font-size: 2em; color: var(--accent);}
+    
+    /* Image and Now Playing Card Styling (Adjusted size) */
+    .hero-image-container {min-width: 220px; text-align: center; display: flex; flex-direction: column; align-items: center;}
+    .hero-image-container img {
+        max-width: 220px; height: auto; border-radius: var(--radius); margin-bottom: 15px;
+        box-shadow: var(--shadow-light); display: block;
+    }
+    
+    .btn{background: var(--accent); color: #fff; padding: 10px 20px; border-radius: 6px; text-decoration: none; display: inline-block; font-weight: 600; transition: background 0.2s, transform 0.1s; border: none;}
+    .btn:hover{background: #e35a2b; transform: translateY(-1px);}
+    
+    .topics{display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; padding: 0 25px 50px;}
+    .topic{background: var(--card); padding: 18px; border-radius: var(--radius); box-shadow: var(--shadow-light); border: 1px solid #f0f0f0; transition: transform 0.3s, box-shadow 0.3s;}
+    .topic:hover{transform: translateY(-3px); box-shadow: var(--shadow-hover);}
+    .topic h4 {margin-top: 0; margin-bottom: 8px; color: var(--dark);}
+    
+    footer{padding: 20px; text-align: center; color: var(--muted); border-top: 1px solid #eee; background: var(--card);}
+    @media(max-width: 768px){
+        header {flex-direction: column; align-items: flex-start;} nav {margin-top: 10px;}
+        .hero{flex-direction: column; align-items: stretch; padding: 30px 20px;}
+    }
+</style>
+</head>
+<body>
+<header>
+  <div class="logo">Matandoh's FM Station • Saturday Talk Show</div>
+  <nav>
+    <a href="home.html" style="color: var(--accent);">Home</a>
+    <a href="topics.html">Topics</a>
+    <a href="search.html">Search by Date</a>
+    <a href="admin.html">Admin</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <div class="hero-card">
+    <h1>Saturday Talk: Voices of Development</h1>
+    <p style="color:var(--muted)">Every Saturday we discuss politics, current affairs, and community projects. Select a topic and listen to the broadcast.</p>
+    <a class="btn" href="topics.html">Listen to Latest Episode</a>
+  </div>
+  <div class="hero-image-container">
+    <img src="IPMC sweclass.jpeg" alt="IPMC Software Engineering Class with Instructor Mr. Aaron">
+    <div style="background:var(--card);padding:15px;border-radius:var(--radius); box-shadow: var(--shadow-light); border: 1px solid #f0f0f0; width: 100%;">
+        <p style="margin: 0; font-size: 0.9em;">Now Playing:</p>
+        <strong style="color: var(--accent);">Topic: Development Projects</strong><br/>
+        <small style="color:var(--muted)">Sat, 29 Nov 2025</small>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2 style="padding:0 25px; margin-top: 40px;">Recent Topics</h2>
+  <div class="topics">
+    <div class="topic">
+        <h4>Education Reforms (IPMC Special)</h4>
+        <p style="color:var(--muted); font-size: 0.9em; margin-bottom: 12px;">Sat, 22 Nov 2025 • Featuring the **IPMC Software Engineering Year Class with Instructor Mr. Aaron**.</p>
+        <a class="btn" style="padding: 8px 14px; font-size: 0.9em;" href="detail.html?id=1">Play Episode</a>
+    </div>
+    <div class="topic">
+        <h4>Local Infrastructure</h4>
+        <p style="color:var(--muted); font-size: 0.9em; margin-bottom: 12px;">Sat, 15 Nov 2025 • Short description of the key discussion points...</p>
+        <a class="btn" style="padding: 8px 14px; font-size: 0.9em;" href="detail.html?id=2">Play Episode</a>
+    </div>
+    <div class="topic">
+        <h4>Healthcare Access</h4>
+        <p style="color:var(--muted); font-size: 0.9em; margin-bottom: 12px;">Sat, 08 Nov 2025 • Short description of the key discussion points...</p>
+        <a class="btn" style="padding: 8px 14px; font-size: 0.9em;" href="detail.html?id=3">Play Episode</a>
+    </div>
+  </div>
+</section>
+
+<footer>© Matandoh's FM Station • Saturday Talk Show</footer>
+</body>
+</html>

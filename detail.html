@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>Episode Detail - Matandoh's FM Station</title>
+<style>
+    :root{
+        --accent: #FF6B35; --bg: #eef1f5; --card: #fff; --muted: #666; --dark: #111;
+        --shadow-light: 0 4px 12px rgba(16, 24, 40, 0.04); --radius: 12px;
+    }
+    body{font-family: system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial, sans-serif; margin:0; background:var(--bg); color:var(--dark); line-height: 1.6;}
+    header{background:var(--dark); color:#fff; padding:18px 25px; font-weight: 800; font-size: 1.2em;}
+    main{padding:30px 25px; max-width: 900px; margin: 0 auto;}
+    .card{background:var(--card); padding:30px; border-radius:var(--radius); box-shadow:var(--shadow-light);}
+    .card h2 {color: var(--accent); margin-top: 0;}
+    .metadata {color: var(--muted); margin-bottom: 20px;}
+    .description-text {margin-top: 20px;}
+    .back-link {margin-top: 25px; display: inline-block; padding: 8px 12px; border: 1px solid var(--muted); border-radius: 6px; text-decoration: none; color: var(--dark);}
+    
+    audio {width: 100%; margin-top: 20px;} /* HTML5 Audio Player Styling */
+</style>
+</head>
+<body>
+<header><div>Matandoh's FM Station • Topic Detail</div></header>
+<main>
+    <div class="card">
+        <h2>Topic: Education Reforms (IPMC Special)</h2>
+        <p class="metadata">Broadcast Date: 22 Nov 2025 | Presenter: Mr. Aaron</p>
+        
+        <hr style="border: 0; border-top: 1px solid #eee; margin: 20px 0;">
+        
+        <div class="description-text">
+            <p><strong>Full Description:</strong> Deep discussion on changes proposed to the national education curriculum, funding and teacher training. This episode features the **IPMC Software Engineering Year Class with Instructor Mr. Aaron**, discussing the role of technology in Ghana's future education goals.</p>
+        </div>
+        
+        <audio controls style="width:100%;" aria-label="Audio player for Education Reforms episode">
+            <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+        
+        <p style="margin-top:12px"><a href="topics.html" class="back-link">← Back to Topics</a></p>
+    </div>
+</main>
+</body>
+</html>

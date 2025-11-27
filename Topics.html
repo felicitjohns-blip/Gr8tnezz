@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>All Topics - Matandoh's FM Station</title>
+<style>
+    :root{
+        --accent: #FF6B35; --bg: #eef1f5; --card: #fff; --muted: #666; --dark: #111;
+        --shadow-light: 0 4px 12px rgba(16, 24, 40, 0.04); --shadow-hover: 0 8px 16px rgba(16, 24, 40, 0.1);
+        --radius: 12px;
+    }
+    body{font-family: system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial, sans-serif; margin: 0; background:var(--bg); color:var(--dark); line-height: 1.6;}
+    header{background:var(--dark); color:#fff; padding:18px 25px; display: flex; align-items: center; justify-content: space-between;}
+    .logo{font-weight: 800; font-size: 1.2em;}
+    nav a{color: #ddd; margin-left: 18px; text-decoration: none; font-weight: 500; transition: color 0.2s;}
+    nav a:hover{color: var(--accent);}
+    
+    /* Search/Filter Bar */
+    .filter-bar {
+        background: var(--card); padding: 20px 25px; border-bottom: 1px solid #eee;
+        display: flex; gap: 20px; align-items: center;
+    }
+    .filter-bar input[type="date"] {padding: 8px 12px; border: 1px solid #ccc; border-radius: 6px;}
+    .btn{
+        background: var(--accent); color: #fff; padding: 10px 16px; border-radius: 6px;
+        text-decoration: none; display: inline-block; font-weight: 600; transition: background 0.2s, transform 0.1s; border: none;
+    }
+    .btn:hover{background: #e35a2b; transform: translateY(-1px);}
+
+    /* Topic Grid */
+    .topics{
+        display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 20px; padding: 25px;
+    }
+    .topic{
+        background: var(--card); padding: 18px; border-radius: var(--radius);
+        box-shadow: var(--shadow-light); border: 1px solid #f0f0f0; transition: transform 0.3s, box-shadow 0.3s;
+    }
+    .topic:hover{transform: translateY(-3px); box-shadow: var(--shadow-hover);}
+    .topic h4 {margin-top: 0; margin-bottom: 8px; color: var(--dark);}
+    
+    footer{padding: 20px; text-align: center; color: var(--muted); border-top: 1px solid #eee; background: var(--card);}
+    
+    @media(max-width: 768px){
+        .filter-bar {flex-direction: column; align-items: stretch;}
+        .filter-bar > * {width: 100%; margin-bottom: 10px;}
+    }
+</style>
+</head>
+<body>
+<header>
+  <div class="logo">Matandoh's FM Station • Saturday Talk Show</div>
+  <nav>
+    <a href="home.html">Home</a>
+    <a href="topics.html" style="color: var(--accent);">Topics</a>
+    <a href="search.html">Search by Date</a>
+    <a href="admin.html">Admin</a>
+  </nav>
+</header>
+
+<div class="filter-bar">
+    <h3 style="margin: 0; font-size: 1.1em;">Filter Episodes:</h3>
+    <label for="start_date">From Date:</label>
+    <input type="date" id="start_date" name="start_date" />
+    <label for="end_date">To Date:</label>
+    <input type="date" id="end_date" name="end_date" />
+    <button class="btn">Apply Filter</button>
+</div>
+
+<section>
+  <div class="topics">
+        <div class="topic">
+        <h4>Education Reforms (IPMC Special)</h4>
+        <p style="color:var(--muted); font-size: 0.9em; margin-bottom: 12px;">Sat, 22 Nov 2025 • Featuring the IPMC Software Engineering Year Class with Instructor Mr. Aaron.</p>
+        <a class="btn" style="padding: 8px 14px; font-size: 0.9em;" href="detail.html?id=1">Play Episode</a>
+    </div>
+    <div class="topic">
+        <h4>Local Infrastructure</h4>
+        <p style="color:var(--muted); font-size: 0.9em; margin-bottom: 12px;">Sat, 15 Nov 2025 • Short description of the key discussion points...</p>
+        <a class="btn" style="padding: 8px 14px; font-size: 0.9em;" href="detail.html?id=2">Play Episode</a>
+    </div>
+    <div class="topic">
+        <h4>Healthcare Access</h4>
+        <p style="color:var(--muted); font-size: 0.9em; margin-bottom: 12px;">Sat, 08 Nov 2025 • Short description of the key discussion points...</p>
+        <a class="btn" style="padding: 8px 14px; font-size: 0.9em;" href="detail.html?id=3">Play Episode</a>
+    </div>
+    <div class="topic">
+        <h4>Community Projects</h4>
+        <p style="color:var(--muted); font-size: 0.9em; margin-bottom: 12px;">Sat, 01 Nov 2025 • Analysis of local initiatives and their impact.</p>
+        <a class="btn" style="padding: 8px 14px; font-size: 0.9em;" href="detail.html?id=4">Play Episode</a>
+    </div>
+  </div>
+</section>
+
+<footer>© Matandoh's FM Station • Saturday Talk Show</footer>
+</body>
+</html>
